@@ -4,6 +4,8 @@ Microsoft AppCenter Exporter
 Microsoft AppCenter Api: https://openapi.appcenter.ms
 
 [![license](https://img.shields.io/github/license/KarinBerg/ms-appcenter-exporter.svg)](https://github.com/KarinBerg/ms-appcenter-exporter/blob/master/LICENSE)
+[![Docker](https://img.shields.io/badge/docker-dockerberg%2Fms--appcenter--exporter-blue.svg?longCache=true&style=flat&logo=docker)](https://hub.docker.com/r/dockerberg/ms-appcenter-exporter/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/dockerberg/ms-appcenter-exporter.svg)](https://hub.docker.com/r/dockerberg/ms-appcenter-exporter/builds)
 
 Prometheus exporter for Microsoft AppCenter for apps and ui test runs.
 
