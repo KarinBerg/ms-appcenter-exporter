@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	Author  = "Karin Berg"
+	Author  = "Karin Berg, Markus Blaschke"
 	Version = "0.1.0"
 )
 
