@@ -7,7 +7,7 @@ Microsoft AppCenter Api: https://openapi.appcenter.ms
 [![Docker](https://img.shields.io/badge/docker-dockerberg%2Fms--appcenter--exporter-blue.svg?longCache=true&style=flat&logo=docker)](https://hub.docker.com/r/dockerberg/ms-appcenter-exporter/)
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/dockerberg/ms-appcenter-exporter.svg)](https://hub.docker.com/r/dockerberg/ms-appcenter-exporter/builds)
 
-Prometheus exporter for Microsoft AppCenter for apps and ui test runs.
+Prometheus exporter for Microsoft AppCenter for apps info and ui test runs.
 
 Configuration
 -------------
@@ -22,8 +22,8 @@ Normally no configuration is needed but can be customized using environment vari
 | `SCRAPE_TIME_LIVE`                    | `30s`                               | Time (time.Duration) between API calls                                   |
 | `SERVER_BIND`                         | `:8080`                             | IP/Port binding                                                          |
 | `APPCENTER_API_URL`                   | none                                | MS AppCenter API url (only if on-prem)                                       |
-| `APPCENTER_ORGANISATION`              | none                                | Azure DevOps organisation (subdomain, if hosted by microsoft)            |
-| `APPCENTER_ACCESS_TOKEN`              | none                                | Azure DevOps access token                                                |
+| `APPCENTER_ORGANISATION`              | none                                | AppCenter organisation            |
+| `APPCENTER_ACCESS_TOKEN`              | none                                | AppCenter access token                                                |
 | `APPCENTER_FILTER_APPS`               | none                                | Whitelist project uuids                                                  |
 | `APPCENTER_BLACKLIST_APPS`            | none                                | Blacklist project uuids                                                  |
 | `REQUEST_CONCURRENCY`                 | `10`                                | API request concurrency (number of calls at the same time)              |
@@ -36,9 +36,9 @@ Metrics
 | Metric                                          | Scraper       | Description                                                                          |
 |-------------------------------------------------|---------------|--------------------------------------------------------------------------------------|
 | `appcenter_stats`                               | live          | General scraper stats                                                                |
-| `appcenter_app_info`                            | live          | Organization app informaation                                                        |
-| `appcenter_uitestruns_info`                     | live          | Count of builds (by status)                                                          |
-| `appcenter_latest_uitestrun_info`               | live          | Latest build status informations                                                     |
+| `appcenter_app_info`                            | live          | Organization app information                                                        |
+| `appcenter_uitestruns_info`                     | live          | Count of ui test runs (by status)                                                          |
+| `appcenter_latest_uitestrun_info`               | live          | Latest ui test run status informations                                                     |
 
 Usage
 -----
