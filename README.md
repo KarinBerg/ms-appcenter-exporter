@@ -1,6 +1,9 @@
 Microsoft AppCenter Exporter
 ============================
 
+## Visual Studio App Center is scheduled for retirement on March 31, 2025. So, you should use alternatives. That's the reason why I achived this repository.
+
+
 Microsoft AppCenter Api: https://openapi.appcenter.ms
 
 [![license](https://img.shields.io/github/license/KarinBerg/ms-appcenter-exporter.svg)](https://github.com/KarinBerg/ms-appcenter-exporter/blob/master/LICENSE)
